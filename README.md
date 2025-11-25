@@ -31,36 +31,4 @@ Display your Reverse: 1999 game activity directly in **Discord Rich Presence**: 
 
 ---
 
-## Configuration
 
-Edit the `config.json` file to customize your presence:
-
-```json
-{
-  "discordClientId": "123456789012345678",
-  "updateIntervalMs": 3000,
-  "locale": "en-US",
-  "assets": {
-    "largeImageKey": "reverse1999_logo",
-    "largeImageText": "Reverse: 1999",
-    "smallImageKey": "arcana_flame",
-    "smallImageText": "Arcana"
-  },
-  "presence": {
-    "showChapter": true,
-    "showDifficulty": true,
-    "showElapsed": true
-  },
-  "features": {
-    "buttons": [
-      { "label": "Watch Stream", "url": "https://twitch.tv/<your_channel>" },
-      { "label": "Join Community", "url": "https://discord.gg/<invite>" }
-    ]
-  },
-  "source": {
-    "mode": "auto",
-    "gameProcessName": "Reverse1999.exe",
-    "logPath": "C:/Games/Reverse1999/logs/latest.log",
-    "apiEndpoint": "http://localhost:1999/state"
-  }
-}
